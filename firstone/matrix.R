@@ -79,3 +79,34 @@ named_mat <- matrix(vect1, nrow = 3, byrow = TRUE,
                     dimnames = list(rnames,cnames))
 named_mat
 
+
+#[03-11-2023]
+
+#MATRIX ARITHEMATIC OPERATIONS
+
+mat1+A
+mat1-A
+A*mat1 #Element wise matrix multiplication
+A/mat1
+A%%mat1
+A%/%mat1
+
+A%*%mat1 #Normal matrix multiplication
+B%*%C
+
+
+#MATRIX ACCESSING
+A
+A[c(T,F,T),c(F,T,T)] #missing values will be considered same as the previous logic
+
+
+#Combination of index
+A
+A[c(1,3),c(F,T)] #here F,T,F,T will be considered for col since it is logical accessing
+
+A[c("r1","r2"),c(1,2)] #accessing by name
+
+A[c(3,4,5,6,7,9)] # it is tracing throuh the col 
+
+rbind()# merging with respect to row ie., rows should be same 
+cbind()# merging with respect to col ie., col should be same 
